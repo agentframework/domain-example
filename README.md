@@ -1,20 +1,30 @@
-validation-example
+domain-example
 ====================================
 
-This example will validate using following data model
+This example will using following service dependencies
 
 ```ts
 
-class Project {
-  @mandatory() name: string;
+
+class ResourceService {
+
 }
 
-class User {
-  @mandatory() id: number;
-  @mandatory() name: string;
-  @optional()  email: string;
-  @optional()  project: Project;
+class ProjectService {
+
+  @inject()
+  protected resources: ResourceService;
+
 }
+
+@agent()
+class System {
+
+  @inject()
+  protected projects: ProjectService;
+
+}
+
 ```
 
 

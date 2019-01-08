@@ -1,0 +1,24 @@
+{
+  "name": "domain-example",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "scripts": {
+    "start": "node --require ts-node/register index.ts"
+  },
+  "description": "Example for @agentframework/domain",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  },
+  "author": "Ling Zhang",
+  "dependencies": {
+    "@agentframework/domain": "~0.0.2"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

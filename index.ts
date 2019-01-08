@@ -9,7 +9,7 @@ class ResourceService {
   }
 
   addResource(name: string) {
-    console.log('Resource added:', name);
+    console.log('ResourceService: addResource(', name, ')');
   }
 }
 
@@ -22,7 +22,7 @@ class ProjectService {
   protected resources: ResourceService;
 
   createProject(name: string) {
-    console.log('Project created:', name);
+    console.log('ProjectService: createProject(', name, ')');
   }
 
   addResource(resource: string) {
